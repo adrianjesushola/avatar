@@ -1,0 +1,121 @@
+body {
+    background-image: url("../Resources/background.jpg");
+    background-size: 100%;
+    text-align: center;
+}
+#busqueda {
+    font-size: 2.0em;
+}
+.barraSup {
+    margin-top: 2%;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+#estructura {
+    display: flex;
+    margin-top: 5%;
+}
+#cuerpo {
+    width: 450px;
+    height: 950px;
+    position: center;
+    margin-left: 20%;
+}
+#cabeza {
+    height: 250px;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top:0px;
+    z-index: 4;
+}
+#torzo {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: -50px;
+    z-index: 3;
+}
+#patas {
+    height: 350px;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: -100px;
+    z-index: 2;
+}
+#botones {
+    width: 450px;
+    height: 950px;
+}
+#botoncabeza {
+    height: 250px;
+    width: 100%;
+    z-index: 4;
+    left: 0px;
+    top: 50px;
+    z-index: 4;
+    text-align: left;
+}
+#botontorzo {
+    height: 400px;
+    width: 100%;
+    z-index: 3;
+    left: 0px;
+    top: -50px;
+    z-index: 3;
+    text-align: left;
+}
+#botonpatas {
+    height: 350px;
+    width: 100%;
+    z-index: 2;
+    left: 0px;
+    top: -100px;
+    z-index: 2;
+    text-align: left;
+}
+.botonSig {
+    background-image: url("../Resources/botonSig.png");
+    background-size: 100%;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+#name {
+    font-size: 2.0em;
+    margin-top: 10px;
+}
+.agregar {
+    background-image: url("../Resources/botonMas.png");
+    background-size: 100%;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+.buscar {
+    background-image: url("../Resources/botonbusqueda.png");
+    background-size: 100%;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+.cosoarriba{
+    width: 100%;
+    height: 60px;
+}
+.centrar{
+    display: flex;
+    align-items: center;
+    margin-left: 40%;
+}

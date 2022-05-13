@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <meta charset="UTF-8">
+    <title>Crear avatar</title>
+</head>
+<body>
+        <div class="cosoarriba">
+            <form action="/guardar/" method="post" class="centrar">
+                <input type="text" id="name" name="name">
+                <input type="submit" class="agregar" value="">
+            </form>
+        </div>
+    <div id="estructura">
+        <div id="cuerpo">
+            <div id="cabeza">
+                {% if  cdx.cabeza ==1 %}
+                    <img src="{{ url_for('static', filename='Resources/Head1.png') }}">
+                {% endif %}
+                {% if  cdx.cabeza ==2 %}
+                    <img src="{{ url_for('static', filename='Resources/head2.png') }}">
+                {% endif %}
+                {% if  cdx.cabeza ==3 %}
+                    <img src="{{ url_for('static', filename='Resources/head3.png') }}">
+                {% endif %}
+                {% if  cdx.cabeza ==4 %}
+                    <img src="{{ url_for('static', filename='Resources/head4.png') }}">
+                {% endif %}
+            </div>
+            <div id="torzo">
+                {% if cdx.torzo == 1 %}
+                    <img src="{{ url_for('static', filename='Resources/cuerpo1.png') }}">
+                {% endif %}
+                {% if cdx.torzo == 2 %}
+                    <img src="{{ url_for('static', filename='Resources/cuerpo2.png') }}">
+                {% endif %}
+                {% if cdx.torzo == 3 %}
+                    <img src="{{ url_for('static', filename='Resources/cuerpo3.png') }}">
+                {% endif %}
+                {% if cdx.torzo == 4 %}
+                    <img src="{{ url_for('static', filename='Resources/cuerpo4.png') }}">
+                {% endif %}
+            </div>
+            <div id="patas">
+                {% if cdx.patas ==1 %}
+                    <img src="{{ url_for('static', filename='Resources/patas1.png') }}">
+                {% endif %}
+                {% if cdx.patas ==2 %}
+                    <img src="{{ url_for('static', filename='Resources/patas2.png') }}">
+                {% endif %}
+                {% if cdx.patas ==3 %}
+                    <img src="{{ url_for('static', filename='Resources/ptas3.png') }}">
+                {% endif %}
+                {% if cdx.patas ==4 %}
+                    <img src="{{ url_for('static', filename='Resources/patas4.png') }}">
+                {% endif %}
+            </div>
+        </div>
+        <div id="botones">
+            <div id="botoncabeza">
+                <form action="/SigCabeza/">
+                    <input type="submit" class="botonSig" value=">">
+                </form>
+            </div>
+            <div id="botontorzo">
+                <form action="/SigTorzo/">
+                    <input type="submit" class="botonSig" value=">">
+                </form>
+            </div>
+            <div id="botonpatas">
+                <form action="/SigPatas/">
+                    <input type="submit" class="botonSig" value=">">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
